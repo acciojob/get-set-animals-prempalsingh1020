@@ -1,7 +1,7 @@
 //complete this code
 class Animal {
 	constructor(species){
-		this.species=species;
+		this._species=species;
 		// this.string=string;
 	}
 	get species(){
