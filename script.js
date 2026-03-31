@@ -4,8 +4,8 @@ class Animal {
 		this.species=species;
 		// this.string=string;
 	}
-	species(){
-		return this.species;
+	get species(){
+		return this._species;
 	}
 	makeSound(){
 		console.log(`The ${this.species} makes a sound`)
@@ -15,7 +15,7 @@ class Animal {
 
 class Dog extends Animal {
 
-	purr(){
+	bark(){
 		console.log("woof");
 	}
 	
@@ -23,7 +23,7 @@ class Dog extends Animal {
 
 class Cat extends Animal {
 
-	bark(){
+	purr(){
 		console.log("purr");
 	}
 	
